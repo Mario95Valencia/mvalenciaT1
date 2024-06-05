@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mvalenciaT1.View.vHome"
+             Title="vHome">
+    <VerticalStackLayout Spacing="25" Margin="20">
+        <Label 
+     Text="Aporte"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center"
+     TextColor="Red"/>
+        <Entry x:Name="txtNombre"
+        Placeholder="Ingresa tu nombre:"
+        TextColor="Black"
+        FontSize="10"/>
+        <Entry x:Name="txtApellido"
+        Placeholder="Ingresa tu apellido:"
+        TextColor="Black"
+        FontSize="10"/>
+        <Entry x:Name="txtEdad"
+Placeholder="Ingresa tu edad:"
+TextColor="Black"
+FontSize="10"/>
+        <Entry x:Name="txtSalario"
+Placeholder="Ingresa tu salario:"
+TextColor="Black"
+FontSize="10"/>
+        <Button x:Name="btnGenerar"
+         Text="Generar"
+         Clicked="btnGenerar_Clicked"
+         HorizontalOptions="Center"
+         />
+        <Label x:Name="lblResultado"
+        TextColor="Black"
+        Text=""
+        FontSize="10"/>
+    </VerticalStackLayout>
+</ContentPage>
